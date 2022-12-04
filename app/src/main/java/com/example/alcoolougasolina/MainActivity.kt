@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun calcularPreco(precoAlcool:Double, precoGasolina:Double){
 
-            var resultado = precoGasolina * 0.7
-            if (resultado < precoAlcool) {
-                binding.textViewResultado.text = "Gasolina"
+            val resultado = precoGasolina * 0.7
+            if (resultado <= precoAlcool) {
+                binding.textViewResultado.text = "Gasoline"
 
             }else{
                 binding.textViewResultado.text = "Alcool"
